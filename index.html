@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.2-web/css/all.min.css">
+
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <img class="logo" src="assets/img/logo.png" alt=""></a>
+                <div class="toggle"></div>
+                <ul class="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">What's New</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><span class="themeSwitch"></span></li>
+                </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>
+                    It's not just Coffee
+                    <br>It's <span>Starbucks</span> 
+                </h2>
+                <p>Starbucks has an unusually human approach to business. We always figured that putting people before products just made good common sense. 
+                Our relationships with farmers yield the highest quality coffees. The 
+                connections we make in communities create a loyal following. 
+                Our ability to accomplish what we set out to do is based primarily 
+                on the people we hire - we call each other "partners." We are always focused on our people.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="assets/img/drink.png" class="starbucks" alt="">
+            </div>
+            <ul class="thumb">
+                <li><img src="assets/img/thumb1.png" onclick="imageSlider('assets/img/drink.png'); changeCircleColor('#017143')"/></li>
+                <li><img src="assets/img/thumb2.png" onclick="imageSlider('assets/img/drink3.png'); changeCircleColor('#eb7495')"/></li>
+                <li><img src="assets/img/thumb3.png" onclick="imageSlider('assets/img/drink2.png'); changeCircleColor('#d752b1')"/></li>
+
+            </ul>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </section>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+        function imageSlider(imgUrl) {
+            document.querySelector('.starbucks').src = imgUrl;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
